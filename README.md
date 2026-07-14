@@ -80,13 +80,20 @@ src
 │   └── Main.java
 │
 ├── util
-    ├── RutInvalidoException.java
-    ├── CorreoInvalidoException.java
-    └── PatenteInvalidaException.java
-
+│   ├── RutInvalidoException.java
+│   ├── CorreoInvalidoException.java
+│   └── PatenteInvalidaException.java
+│
+├── service
+│   └── RegistroService.java
+│
+└── resources
+    └── registro.txt
 
 ```
+# Pendientes
 
+la persistencia de datos a través de archivos queda pendiente para una futura actualización, por lo que los paquetes service y resources no se utilizan en esta versión.
 ---
 
 # Interfaz gráfica
