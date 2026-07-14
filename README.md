@@ -94,6 +94,7 @@ src
 # Pendientes
 
 la persistencia de datos a través de archivos queda pendiente para una futura actualización, por lo que los paquetes service y resources no se utilizan en esta versión.
+
 ---
 
 # Interfaz gráfica
