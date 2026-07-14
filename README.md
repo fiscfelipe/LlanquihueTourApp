@@ -20,7 +20,7 @@ La aplicación permite:
 - Registrar excursiones culturales.
 - Visualizar los registros almacenados.
 - Eliminar registros existentes.
-- 
+  
 ---
 
 # Conceptos de Programación Orientada a Objetos utilizados
@@ -36,6 +36,7 @@ Durante el desarrollo del proyecto se aplicaron diversos conceptos de Programaci
 - Excepciones personalizadas
 - Organización mediante paquetes
 - Colecciones Genéricas
+  
 ---
 
 # Estructura del proyecto
