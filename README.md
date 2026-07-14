@@ -1,4 +1,4 @@
-# Registro de Proveedores - Llanquihue Tour
+# Llanquihue Tour App
 
 ## Descripción
 
