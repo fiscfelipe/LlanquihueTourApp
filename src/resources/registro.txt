@@ -1,8 +1,0 @@
-TRANSPORTE;Juan Pérez;87654321-K;juan@hotmail.com;Los Alerces;456;Puerto Varas;Los Lagos;Van;ABCD12;12
-TRANSPORTE;Carlos Muñoz;12345678-9;carlos@gmail.com;San Martín;123;Llanquihue;Los Lagos;Bus;AB1234;30
-TRANSPORTE;Ricardo Soto;14567890-2;ricardo@transportes.cl;Vicente Pérez Rosales;850;Puerto Montt;Los Lagos;Minibus;BCDE34;18
-TRANSPORTE;Marcela Vargas;16789012-3;marcela@gmail.com;Del Salvador;215;Puerto Varas;Los Lagos;SUV;CDEF56;6
-ALOJAMIENTO;María Soto;11222333-4;maria@live.cl;Costanera;789;Frutillar;Los Lagos;Hostal Die Oma;15;Costanera;800;Frutillar;Los Lagos
-ALOJAMIENTO;Pedro González;13579246-8;pedro@gmail.com;Imperial;456;Puerto Montt;Los Lagos;Hotel Patagonia;40;Urmeneta;150;Puerto Montt;Los Lagos
-ALOJAMIENTO;Ana Hernández;15432198-7;ana@hotmail.com;Pérez Rosales;210;Puerto Varas;Los Lagos;Cabañas del Lago;12;Del Lago;300;Puerto Varas;Los Lagos
-ALOJAMIENTO;Luis Navarro;17890123-5;luis@yahoo.cl;Los Carrera;145;Llanquihue;Los Lagos;Residencial Llanquihue;8;Baquedano;98;Llanquihue;Los Lagos
