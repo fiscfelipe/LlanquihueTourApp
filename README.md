@@ -1,129 +1,200 @@
 # Llanquihue Tour App
 
-## Descripción
+Proyecto final desarrollado para la asignatura de **Programación Orientada a Objetos**.
 
-Aplicación de escritorio desarrollada en Java utilizando Swing para la gestión de proveedores y servicios turísticos de la agencia turística **Llanquihue Tour**.
+El sistema permite administrar la información de una agencia de turismo mediante una aplicación de escritorio desarrollada en **Java Swing**, aplicando los principales conceptos de Programación Orientada a Objetos, persistencia de datos y organización modular mediante paquetes.
 
-El sistema permite registrar distintos tipos de proveedores y servicios turísticos, visualizarlos y eliminarlos mediante una interfaz gráfica sencilla.
+---
+
+# Objetivo
+
+Desarrollar un sistema capaz de administrar los recursos de una agencia turística, permitiendo registrar y gestionar clientes, guías turísticos, empresas externas, vehículos, alojamientos, servicios turísticos y reservas, conservando la información mediante archivos de texto.
 
 ---
 
 # Funcionalidades
 
-La aplicación permite:
+El sistema permite:
 
-- Registrar proveedores de transporte.
-- Registrar proveedores de alojamiento.
+- Registrar clientes.
 - Registrar guías turísticos.
-- Registrar rutas gastronómicas.
-- Registrar paseos lacustres.
-- Registrar excursiones culturales.
-- Visualizar los registros almacenados.
-- Eliminar registros existentes.
-  
+- Registrar empresas de transporte.
+- Registrar empresas de alojamiento.
+- Registrar vehículos asociados a empresas.
+- Registrar alojamientos asociados a empresas.
+- Registrar distintos tipos de servicios turísticos.
+- Crear y eliminar reservas.
+- Controlar automáticamente los cupos disponibles.
+- Guardar y cargar la información desde archivos de texto.
+
 ---
 
-# Conceptos de Programación Orientada a Objetos utilizados
+# Organización del proyecto
 
-Durante el desarrollo del proyecto se aplicaron diversos conceptos de Programación Orientada a Objetos, entre ellos:
-
-- Herencia
-- Composición
-- Polimorfismo
-- Interfaces
-- Encapsulamiento
-- Sobrescritura de métodos
-- Excepciones personalizadas
-- Organización mediante paquetes
-- Colecciones Genéricas
-  
----
-
-# Estructura del proyecto
+El proyecto está organizado utilizando una arquitectura por paquetes.
 
 ```
 src
 │
-├── data
-│   └── GestorEntidades.java
-│
+├── UI
 ├── model
-│   ├── Persona.java
-│   ├── ProveedorTransporte.java
-│   ├── ProveedorAlojamiento.java
-│   ├── GuiaTuristico.java
-│   ├── ServicioTuristico.java
-│   ├── RutaGastronomica.java
-│   ├── PaseoLacustre.java
-│   ├── ExcursionCultural.java
-│   ├── Direccion.java
-│   ├── Vehiculo.java
-│   ├── Alojamiento.java
-│   ├── Rut.java
-│   ├── Correo.java
-│   ├── Patente.java
-│   └── Registrable.java
-│
-├── ui
-│   ├── VentanaPrincipal.java
-│   ├── PanelBase.java
-│   ├── PanelMenuPrincipal.java
-│   ├── PanelMenuAgregarRegistro.java
-│   ├── PanelProveedorTransporte.java
-│   ├── PanelProveedorAlojamiento.java
-│   ├── PanelGuiaTuristico.java
-│   ├── PanelRutaGastronomica.java
-│   ├── PanelPaseoLacustre.java
-│   ├── PanelExcursionCultural.java
-│   ├── PanelVisualizarRegistros.java
-│   └── PanelEliminarRegistro.java
-│   └── Main.java
-│
-├── util
-│   ├── RutInvalidoException.java
-│   ├── CorreoInvalidoException.java
-│   └── PatenteInvalidaException.java
-│
+├── data
 ├── service
-│   └── RegistroService.java
-│
+├── util
 └── resources
-    └── registro.txt
-
 ```
-# Pendientes
 
-la persistencia de datos a través de archivos queda pendiente para una futura actualización, por lo que los paquetes service y resources no se utilizan en esta versión.
+## UI
 
----
+Contiene todas las interfaces gráficas desarrolladas utilizando Java Swing.
 
-# Interfaz gráfica
+Incluye:
 
-La aplicación fue desarrollada utilizando **Java Swing**.
-
-Se utiliza una única ventana principal (`JFrame`) sobre la cual se intercambian distintos paneles (`JPanel`) para cada funcionalidad del sistema.
-
----
-
-# Validaciones
-
-El sistema incorpora validaciones para:
-
-- Campos obligatorios.
-- Formato de RUT.
-- Formato de correo electrónico.
-- Formato de patente.
-- Valores numéricos.
-- Valores positivos cuando corresponde.
+- Ventana principal.
+- Menús.
+- Paneles de registro.
+- Paneles de visualización.
+- Paneles de administración.
 
 ---
 
+## model
 
-# Cómo ejecutar
+Contiene las clases que representan el dominio del problema.
 
-1. Descargar y abrir el proyecto en NetBeans.
-3. Ejecutar la clase `Main`.
-4. Utilizar el menú principal para acceder a las distintas funcionalidades.
+Entre ellas:
+
+- Persona
+- Cliente
+- GuiaTuristico
+- Proveedor
+- EmpresaExterna
+- EmpresaTransporte
+- EmpresaAlojamiento
+- Vehiculo
+- Alojamiento
+- Servicio
+- ServicioTransporte
+- ServicioAlojamiento
+- RutaGastronomica
+- PaseoLacustre
+- ExcursionCultural
+- Reserva
+
+---
+
+## data
+
+Contiene los gestores encargados de administrar las colecciones de objetos.
+
+- GestorPersonas
+- GestorEmpresas
+- GestorServicios
+- GestorReservas
+- GestorEntidades
+
+---
+
+## service
+
+Contiene la clase `RegistroService`, responsable de la persistencia de datos mediante archivos de texto.
+
+---
+
+## util
+
+Contiene clases auxiliares y excepciones personalizadas utilizadas para validar la información ingresada.
+
+Ejemplos:
+
+- RutInvalidoException
+- CorreoInvalidoException
+- PatenteInvalidaException
+- RegistroDuplicadoException
+
+---
+
+## resources
+
+Contiene los archivos utilizados para almacenar la información del sistema.
+
+- clientes.txt
+- empresas.txt
+- guias.txt
+- servicios.txt
+
+---
+
+# Conceptos de Programación Orientada a Objetos utilizados
+
+Durante el desarrollo del proyecto se implementaron distintos conceptos de Programación Orientada a Objetos.
+
+## Encapsulamiento
+
+Los atributos de las clases se encuentran encapsulados mediante modificadores de acceso privados y son manipulados a través de métodos públicos.
+
+## Herencia
+
+Se implementaron jerarquías de clases para reutilizar comportamiento común.
+
+Ejemplos:
+
+- Persona
+  - Cliente
+  - GuiaTuristico
+  - Proveedor
+
+- EmpresaExterna
+  - EmpresaTransporte
+  - EmpresaAlojamiento
+
+- Servicio
+  - ServicioTransporte
+  - ServicioAlojamiento
+  - RutaGastronomica
+  - PaseoLacustre
+  - ExcursionCultural
+
+## Composición
+
+El sistema utiliza composición para representar relaciones entre objetos.
+
+Ejemplos:
+
+- Empresa → Vehículos
+- Empresa → Alojamientos
+- Cliente → Reservas
+- Reserva → Servicio
+
+## Polimorfismo
+
+Los gestores almacenan referencias utilizando las clases base (`Persona`, `Servicio`, `EmpresaExterna`) permitiendo trabajar con sus distintas subclases.
+
+## Interfaces
+
+Se utiliza la interfaz `Registrable` para representar las entidades registrables dentro del sistema.
+
+## Excepciones personalizadas
+
+Se implementaron excepciones para validar distintos tipos de datos, evitando el ingreso de información inválida.
+
+---
+
+# Persistencia
+
+La información del sistema se guarda automáticamente en archivos de texto mediante la clase `RegistroService`.
+
+Al iniciar la aplicación, todos los registros almacenados son cargados automáticamente.
+
+---
+
+# Tecnologías utilizadas
+
+- Java
+- Java Swing
+- NetBeans
+- Programación Orientada a Objetos
+- Persistencia mediante archivos de texto
 
 ---
 
@@ -131,4 +202,4 @@ El sistema incorpora validaciones para:
 
 Felipe Ignacio Saldías Cofré
 
-Estudiante de la carrera Analista Programador Computacional DuocUC
+Proyecto desarrollado para la asignatura **Programación Orientada a Objetos**.
