@@ -1,0 +1,4 @@
+GUIA;10123456-7;Carolina Díaz;carolina.diaz@gmail.com;+56961111111;Los Álamos;120;Puerto Varas;Los Lagos;Turismo Cultural;Español, Inglés;8
+GUIA;11234567-8;Rodrigo Fuentes;rodrigo.fuentes@gmail.com;+56962222222;San Martín;245;Puerto Montt;Los Lagos;Naturaleza;Español, Portugués;5
+GUIA;13345678-9;Valentina Herrera;valentina.h@gmail.com;+56963333333;Avenida del Lago;89;Frutillar;Los Lagos;Gastronomía;Español, Inglés, Alemán;10
+GUIA;14568125-4;Pepe Blanco;pepe@llanquihuetour.cl;+5685645214;Calla 2;454;Puerto Montt;Los Lagos;Navegacion;Español;5

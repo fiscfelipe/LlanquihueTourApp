@@ -1,0 +1,9 @@
+CLIENTE;12345678-5;Juan Pérez;juan.perez@gmail.com;+56911111111;Los Robles;123;Puerto Montt;Los Lagos
+RESERVA;1;Traslado Aeropuerto El Tupual;3
+CLIENTE;15234567-4;María González;maria.g@gmail.com;+56922222222;Las Flores;45;Puerto Varas;Los Lagos
+CLIENTE;20111222-3;Camila Rojas;camila.r@gmail.com;+56944444444;Prat;56;Llanquihue;Los Lagos
+RESERVA;4;Traslado Aeropuerto El Tupual;2
+CLIENTE;21222333-4;Diego Muñoz;diego.m@gmail.com;+56955555555;O'Higgins;777;Osorno;Los Lagos
+RESERVA;5;Traslado Aeropuerto El Tupual;2
+CLIENTE;17599806-3;Felipe;felipe@gmail.com;+5685624158;Union;20;Valparaiso;Valparaiso
+CLIENTE;45879785-2;Felipe Saldias;feli@gmail.com;+568789854;Diagonal Uno;12;Santiago;Metropolitana

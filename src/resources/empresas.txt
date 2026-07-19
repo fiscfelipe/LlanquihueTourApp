@@ -1,0 +1,7 @@
+EMPRESA;TRANSPORTE;Transportes Llanquihue;contacto@transportesllanquihue.cl;16111222-3;Carlos Muñoz;carlos.munoz@transportesllanquihue.cl;+56971111111;Ruta 5 Sur;1000;Puerto Montt;Los Lagos;Administrador
+VEHICULO;Van;DL2332;12
+VEHICULO;Bus;DD2112;30
+VEHICULO;Mini Van;FD0121;8
+VEHICULO;Micro Bus;FFDD21;20
+EMPRESA;SERVICIO_ALOJAMIENTO;Hostal Lago Azul;contacto@lagoazul.cl;17222333-4;Ana Torres;ana.torres@lagoazul.cl;+56972222222;Costanera;450;Puerto Varas;Los Lagos;Administradora
+ALOJAMIENTO;Habitacion 01;Habitacion Simple;2;Calle Nueva;213;Puerto Montt;Los Lagos

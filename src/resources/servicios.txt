@@ -1,0 +1,6 @@
+RUTA;Ruta Sabores Del Sur;2026-08-05;10:30;10800;5;10000;13345678-9;2
+TRANSPORTE;Traslado Aeropuerto El Tupual;2026-07-20;06:00;1200;5;15000;Transportes Llanquihue;DL2332;Llanquihue;Puerto Montt
+SERVICIO_ALOJAMIENTO;Noche Simple;2026-07-19;18:00;86400;2;20000;Hostal Lago Azul;Habitacion 01
+PASEO;Paseo en Lancha por el Lago;2026-07-20;15:00;7200;4;10000;14568125-4;Lancha;Lago Azul
+EXCURSION;Paseo al Museo;2026-07-20;10:30;7200;5;3000;10123456-7;Museo Principal
+PASEO;Viaje por el rio;2027-01-12;08:00;7200;5;3000;14568125-4;Lancha;Rio Blanco
